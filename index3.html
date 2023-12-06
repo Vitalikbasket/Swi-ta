@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Świąteczna Strona</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff; /* zielone tło */
+            color: rgb(207, 0, 0); /* czerwony kolor tekstu */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffffff; /* białe tło nagłówka */
+            color: #e32636; /* czerwony kolor tekstu w nagłówku */
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            background-color: #e32636; /* ciemniejszy odcień czerwieni */
+            text-align: center;
+            padding: 0.5em;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff; /* biały kolor linków */
+            padding: 0.5em 1em;
+            margin: 0 0.5em;
+            border-radius: 10px; /* zaokrąglone rogi */
+            background-color: #49191d; /* czerwony kolor tła linków */
+        }
+        section {
+            padding: 1em;
+        }
+        footer {
+            background-color: #e32636; /* czerwone tło stopki */
+            padding: 1em;
+            text-align: center;
+            color: #fff; /* biały kolor tekstu w stopce */
+            margin-top: 20px; /* Dodaj margines u góry */
+            margin-bottom: 0; /* Usuń domyślny margines na dole */
+            margin-left: 5px; /* Dodaj margines z lewej strony */
+            margin-right: 5px; /* Dodaj margines z prawej strony */
+        }
+        .thumbnail-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .thumbnail {
+            width: 300px; /* Dostosuj szerokość miniaturki */
+            height: 200px; /* Dostosuj wysokość miniaturki */
+            border-radius: 10px; /* Zaokrąglone rogi miniaturki */
+            overflow: hidden; /* Ukryj ewentualne przekraczające elementy */
+            transition: filter 0.3s, transform 0.3s; /* Dodaj efekty przejścia przy zmianie filtra i transformacji */
+        }
+        .thumbnail img {
+            width: 100%; /* Zapełnij szerokość kontenera obrazem */
+            height: 100%; /* Zapełnij wysokość kontenera obrazem */
+            object-fit: cover; /* Zachowaj proporcje obrazu i wypełnij cały kontener */
+        }
+        .thumbnail:hover {
+            filter: grayscale(0%) brightness(100%); /* Zastosuj efekt desaturacji i zwiększenia jasności po najechaniu kursorem */
+            transform: scale(1.1); /* Powiększenie przy najechaniu kursorem */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wesołe Święta</h1>
+    </header>
+    <nav>
+        <a href="#carols">Lista kolęd</a>
+        <a href="#games">Gry świąteczne</a>
+        <a href="#recipes">Przepisy</a>
+        <a href="#contact">Dane kontaktowe</a>
+        <a href="#social">Media społecznościowe</a>
+    </nav>
+    <section id="carols">
+        <h2>Lista kolęd</h2>
+        <div class="thumbnail-container">
+            <a href="index2.html" class="thumbnail">
+                <img src="kolęda1.jpg" alt="Kolęda 1" />
+            </a>
+            <a href="index.html" class="thumbnail">
+                <img src="kolęda2.jpg" alt="Kolęda 2" />
+            </a>
+            <a href="index1.html" class="thumbnail">
+                <img src="kolęda3.jpg" alt="Kolęda 3" />
+            </a>
+        </div>
+        <section id="games">
+            <h2>Gry świąteczne</h2>
+            <div id="interactive-game" class="thumbnail" style="cursor: pointer;">
+                <a href="gry.html">
+                    <img src="gry.jpg" alt="Interaktywne zdjęcie" style="width: 100%; height: auto;">
+                </a>
+            </div>
+        </section>     
+        
+    <section id="recipes">
+        <h2>Przepisy na świąteczne smakołyki</h2>
+        <div id="interactive-game" class="thumbnail" style="cursor: pointer;">
+            <a href="jedzonko.html">
+                <img src="przepisyjpg.jpeg" alt="Interaktywne zdjęcie" style="width: 100%; height: auto;">
+            </a>
+        </div>
+
+        <script type="text/javascript" src="snow.js">     
+            </script>
+
+    </section>
+    <section id="social">
+        <h2>Zdjęcia związane ze Świętami Bożego Narodzenia.</h2>
+        <div id="interactive-game" class="thumbnail" style="cursor: pointer;">
+            <a href="galeria.html">
+                <img src="galeria.jpg" alt="Interaktywne zdjęcie" style="width: 100%; height: auto;">
+            </a>
+        </div>
+    </section>
+    <footer id="contact">
+        <h2>Dane kontaktowe</h2>
+        <p>Napisz do nas pod adresem: kulinicvitalik43@gmail.com</p>
+        <p>Śledź nas na mediach społecznościowych: <a href="https://m.facebook.com/p/Technikum-im-Jana-Zamoyskiego-w-Zwierzy%C5%84cu-100038756511179/" target="_blank">Facebook</a></p>
+    </footer>
+</body>
+</html>

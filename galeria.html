@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Świąteczna Galeria</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      background-color: #f0f0f0; /* Jasny kolor tła */
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      color: #e44d26; /* Czerwony kolor nagłówka */
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+    #gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .photo-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+    }
+    .photo {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .photo-description {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      text-align: left;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    .photo-container:hover {
+      transform: scale(1.05);
+    }
+    .photo-container:hover .photo-description {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Świąteczna Galeria</h1>
+
+<div id="gallery">
+  <div class="photo-container" onclick="redirectToPage('waw.html')">
+    <img class="photo" src="Waw.jpg" alt="jarmark">
+    <div class="photo-description">Jarmark bożonarodzeniowy w Warszawie</div>
+  </div>
+
+  <div class="photo-container" onclick="redirectToPage('krak.html')">
+    <img class="photo" src="krakow.jpg" alt="Jarmark">
+    <div class="photo-description">Jarmark bożonarodzeniowy w Krakowie</div>
+  </div>
+
+  <div class="photo-container" onclick="redirectToPage('wroc.html')">
+    <img class="photo" src="wroclaw.jpg" alt="jarmark">
+    <div class="photo-description">Jarmark bożonarodzeniowy we Wrocławiu</div>
+  </div>
+  
+  <!-- Dodaj więcej zdjęć z opisami i przyporządkuj nowe strony -->
+
+</div>
+
+<script>
+  function redirectToPage(page) {
+    window.location.href = page;
+  }
+</script>
+
+<body>
+
+  <!-- Przycisk "Wróć do strony głównej" -->
+  <a href="index3.html" style="position: fixed; top: 10px; left: 10px; padding: 10px; background-color: #ffc400; color: #fff; text-decoration: none; border-radius: 5px;">Wróć do strony głównej</a>
+
+  <!-- Tutaj umieść resztę treści strony -->
+
+</body>
+
+</body>
+</html>
