@@ -3,108 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kolęda 1</title>
+    <title>Świąteczna Strona</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #fff; /* białe tło */
-            color:  #c00; /* czerwony kolor tekstu */
+            background-color: #ffffff; /* zielone tło */
+            color: rgb(207, 0, 0); /* czerwony kolor tekstu */
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: rgb(255, 255, 255); /* czerwone tło nagłówka */
+            background-color: #ffffff; /* białe tło nagłówka */
+            color: #e32636; /* czerwony kolor tekstu w nagłówku */
             padding: 1em;
             text-align: center;
+        }
+        nav {
+            background-color: #e32636; /* ciemniejszy odcień czerwieni */
+            text-align: center;
+            padding: 0.5em;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff; /* biały kolor linków */
+            padding: 0.5em 1em;
+            margin: 0 0.5em;
+            border-radius: 10px; /* zaokrąglone rogi */
+            background-color: #49191d; /* czerwony kolor tła linków */
         }
         section {
             padding: 1em;
-            display: flex;
-            flex-direction: row; /* Ustawienie tekstu i odtwarzacza obok siebie */
-            justify-content: space-between; /* Odstęp między tekstem a odtwarzaczem */
-            max-width: 800px; /* Maksymalna szerokość sekcji */
-            margin: 0 auto; /* Wyśrodkowanie sekcji */
         }
         footer {
-            background-color: rgb(204, 92, 0); /* czerwone tło stopki */
+            background-color: #e32636; /* czerwone tło stopki */
             padding: 1em;
             text-align: center;
             color: #fff; /* biały kolor tekstu w stopce */
+            margin-top: 20px; /* Dodaj margines u góry */
+            margin-bottom: 0; /* Usuń domyślny margines na dole */
+            margin-left: 5px; /* Dodaj margines z lewej strony */
+            margin-right: 5px; /* Dodaj margines z prawej strony */
         }
-        iframe {
-            width: 45%; /* Szerokość odtwarzacza YouTube */
-            height: 315px; /* Wysokość odtwarzacza YouTube */
-        }
-        audio {
-            width: 45%; /* Szerokość odtwarzacza audio */
+        .thumbnail-container {
+            display: flex;
+            justify-content: space-around;
             margin-top: 20px;
         }
-        .inner-text {
-            white-space: nowrap; /* Zapobiega zawijaniu tekstu na nową linię */
-            width: 60%; /* Szerokość tekstu */
-            margin-right: 20px; /* Dodatkowy odstęp od odtwarzacza */
+        .thumbnail {
+            width: 300px; /* Dostosuj szerokość miniaturki */
+            height: 200px; /* Dostosuj wysokość miniaturki */
+            border-radius: 10px; /* Zaokrąglone rogi miniaturki */
+            overflow: hidden; /* Ukryj ewentualne przekraczające elementy */
+            transition: filter 0.3s, transform 0.3s; /* Dodaj efekty przejścia przy zmianie filtra i transformacji */
+        }
+        .thumbnail img {
+            width: 100%; /* Zapełnij szerokość kontenera obrazem */
+            height: 100%; /* Zapełnij wysokość kontenera obrazem */
+            object-fit: cover; /* Zachowaj proporcje obrazu i wypełnij cały kontener */
+        }
+        .thumbnail:hover {
+            filter: grayscale(0%) brightness(100%); /* Zastosuj efekt desaturacji i zwiększenia jasności po najechaniu kursorem */
+            transform: scale(1.1); /* Powiększenie przy najechaniu kursorem */
         }
     </style>
 </head>
 <body>
     <header>
-        <h1> W żłobie leży!</h1>
+        <h1>Wesołe Święta</h1>
     </header>
-    <section>
-        <div class="inner-text">
-            W żłobie leży, któż pobieży kolędować Małemu<br>
-Jezusowi Chrystusowi, dziś nam narodzonemu<br>
-Pastuszkowie przybywajcie<br>
-Jemu wdzięcznie przygrywajcie<br>
-Jako Panu naszemu<br>
-Pastuszkowie przybywajcie<br>
-Jemu wdzięcznie przygrywajcie<br>
-Jako Panu naszemu<br>
-My zaś sami z piosneczami za wami pospieszymy<br>
-Jak ubogo narodzony<br>
-Płacze w stajni położony<br>
-Więc Go dziś ucieszymy<br>
-Jak ubogo narodzony<br>
-Płacze w stajni położony<br>
-Więc Go dziś ucieszymy<br>
-Naprzód tedy niechaj wszędy zabrzmi świat z wesołości<br>
-Że posłany jest nam dany Emanuel w niskości<br>
-Jego tedy przywitajmy<br>
-Z Aniołami zaśpiewajmy<br>
-Chwała na wysokości<br>
-Jego tedy przywitajmy<br>
-Z Aniołami zaśpiewajmy<br>
-Chwała na wysokości<br>
-Jego tedy przywitajmy<br>
-Z Aniołami zaśpiewamy<br>
-Chwała na wysokości<br>
-Jego tedy przywitajmy<br>
-Z Aniołami zaśpiewamy<br>
-Chwała na wysokości<br>
-      </p>
+    <nav>
+        <a href="#carols">Lista kolęd</a>
+        <a href="#games">Gry świąteczne</a>
+        <a href="#recipes">Przepisy</a>
+        <a href="#contact">Dane kontaktowe</a>
+        <a href="#social">Media społecznościowe</a>
+    </nav>
+    <section id="carols">
+        <h2>Lista kolęd</h2>
+        <div class="thumbnail-container">
+            <a href="index2.html" class="thumbnail">
+                <img src="kolęda1.jpg" alt="Kolęda 1" />
+            </a>
+            <a href="index.html" class="thumbnail">
+                <img src="kolęda2.jpg" alt="Kolęda 2" />
+            </a>
+            <a href="index1.html" class="thumbnail">
+                <img src="kolęda3.jpg" alt="Kolęda 3" />
+            </a>
         </div>
-        <iframe width="100%" height="100%" src="https://youtu.be/TOmrW-at3_s?si=llfAKHWk-nJopZmi" frameborder="0" allowfullscreen></iframe>
-    </section>
-    <section>
-        <h2>Nagranie Audio</h2>
+        <section id="games">
+            <h2>Gry świąteczne</h2>
+            <div id="interactive-game" class="thumbnail" style="cursor: pointer;">
+                <a href="gry.html">
+                    <img src="gry.jpg" alt="Interaktywne zdjęcie" style="width: 100%; height: auto;">
+                </a>
+            </div>
+        </section>     
+        
+    <section id="recipes">
+        <h2>Przepisy na świąteczne smakołyki</h2>
+        <div id="interactive-game" class="thumbnail" style="cursor: pointer;">
+            <a href="jedzonko.html">
+                <img src="przepisyjpg.jpeg" alt="Interaktywne zdjęcie" style="width: 100%; height: auto;">
+            </a>
+        </div>
 
-        <audio controls>
-            <source src="koleda2.mp3" type="audio/mp3">
-            Twoja przeglądarka nie obsługuje elementu audio.
-        </audio>
+        <script type="text/javascript" src="snow.js">     
+            </script>
+
     </section>
-    <footer>
-        <p>© 2023 WSZYSTKIEGO DOBREGO </p>
+    <section id="social">
+        <h2>Zdjęcia związane ze Świętami Bożego Narodzenia.</h2>
+        <div id="interactive-game" class="thumbnail" style="cursor: pointer;">
+            <a href="galeria.html">
+                <img src="galeria.jpg" alt="Interaktywne zdjęcie" style="width: 100%; height: auto;">
+            </a>
+        </div>
+    </section>
+    <footer id="contact">
+        <h2>Dane kontaktowe</h2>
+        <p>Napisz do nas pod adresem: kulinicvitalik43@gmail.com</p>
+        <p>Śledź nas na mediach społecznościowych: <a href="https://m.facebook.com/p/Technikum-im-Jana-Zamoyskiego-w-Zwierzy%C5%84cu-100038756511179/" target="_blank">Facebook</a></p>
     </footer>
-
-    <body>
-
-        <!-- Przycisk "Wróć do strony głównej" -->
-        <a href="index1.html" style="position: fixed; top: 10px; left: 10px; padding: 10px; background-color: #574406; color: #fff; text-decoration: none; border-radius: 5px;">Wróć do strony głównej</a>
-    
-        <!-- Tutaj umieść resztę treści strony -->
-    
-    </body>
-
 </body>
 </html>
